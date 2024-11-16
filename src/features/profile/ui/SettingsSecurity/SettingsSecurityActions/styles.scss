@@ -1,0 +1,20 @@
+.security-actions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+
+  button {
+    padding: 10px 24px;
+    font-size: .875rem;
+    color: var(--text-color);
+    border-radius: 24px;
+    background: var(--dark);
+    border: 1px solid var(--dark);
+
+    &:nth-child(1) {
+      background: transparent;
+    }
+  }
+}

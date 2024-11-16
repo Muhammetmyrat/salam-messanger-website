@@ -1,0 +1,17 @@
+.button {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--dark);
+  background-color: var(--gray);
+  color: var(--text-color);
+  padding: 10px;
+  min-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+
+  &__danger {
+    background-color: var(--red);
+    color: #ffff
+  }
+}

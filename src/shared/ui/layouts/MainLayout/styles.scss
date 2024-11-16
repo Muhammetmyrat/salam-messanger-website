@@ -1,0 +1,16 @@
+.main {
+  height: 100%;
+  &__wrapper {
+    height: 100%;
+    display: flex;
+  }
+
+  &__sidebar {
+    width: 90px;
+  }
+
+  &__body {
+    width: calc(100% - 88px);
+    height: 100%;
+  }
+}

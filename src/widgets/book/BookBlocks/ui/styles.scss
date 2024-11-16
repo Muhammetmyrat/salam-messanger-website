@@ -1,0 +1,8 @@
+.book-blocks {
+  width: 100%;
+  // .book-blocks__block
+  &__block {
+    width: 100%;
+    padding-bottom: 24px;
+  }
+}

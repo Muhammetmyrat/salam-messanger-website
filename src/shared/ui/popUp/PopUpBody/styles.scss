@@ -1,0 +1,77 @@
+.pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 99;
+  user-select: none;
+  transition: all 0.3s ease;
+  padding-left: 20px;
+  padding-right: 20px;
+  &.active {
+    opacity: 1;
+    z-index: 1000;
+    visibility: visible;
+    background: var(--dark);
+    -webkit-backdrop-filter: blur(15px);
+    -moz-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    pointer-events: auto;
+    .pop-up__body {
+      transform: scale(1);
+      transition: all 0.3s ease;
+    }
+
+    &.bg-none {
+      background: transparent;
+      -webkit-backdrop-filter: none;
+      -moz-backdrop-filter: none;
+      backdrop-filter: none;
+    }
+  }
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--gray);
+    border-radius: 5px;
+    padding: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--system-gray);
+    border-radius: 5px;
+    border: 2px solid var(--gray);
+  }
+  &__wrapper {
+    padding: 20px;
+    width: 100%;
+    flex: 1 0 auto;
+    margin: auto 0;
+    padding: 20px 0;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__body {
+    position: relative;
+    transition: all 0.3s ease;
+    transform: scale(0);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,14 @@
+.artist-preview {
+  // .artist-preview__artist
+  &__artist {
+    padding: 0 24px;
+  }
+  // .artist-preview__albums
+  &__albums {
+    margin-top: 24px;
+  }
+  // .artist-preview__songs
+  &__songs {
+    margin-top: 24px;
+  }
+}

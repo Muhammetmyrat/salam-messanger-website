@@ -1,0 +1,41 @@
+.music-block-box {
+  &:deep() {
+    .main-box__body {
+      padding-right: 24px;
+    }
+  }
+}
+
+.music-block-header {
+  display: flex;
+  justify-content: space-between;
+  // .music-block-header__empty
+  &__empty {
+  }
+  // .music-block-header__title
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  // .music-block-header__close
+  &__close {
+    display: flex;
+    padding: 4px;
+    background-color: transparent;
+    color: var(--white);
+  }
+}
+
+.music-block {
+  padding: 0 44px;
+  // .music-block__row
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 32px;
+  }
+  // .music-block__cell
+  &__cell {
+  }
+}

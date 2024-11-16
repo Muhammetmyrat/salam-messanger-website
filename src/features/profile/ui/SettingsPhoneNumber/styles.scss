@@ -1,0 +1,16 @@
+.phone-number {
+  width: 100%;
+
+  &__wrapper {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__code {
+    width: 56px;
+  }
+  
+  &__number {
+    flex: 1 1 auto;
+  }
+}

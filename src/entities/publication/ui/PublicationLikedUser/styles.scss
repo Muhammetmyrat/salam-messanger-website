@@ -1,0 +1,31 @@
+.publication-liked-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  // .publication-liked-user__avatar
+  &__avatar {
+    width: 56px;
+    min-width: 56px;
+  }
+  // .publication-liked-user__content
+  &__content {
+    flex: 1 1;
+  }
+  // .publication-liked-user__username
+  &__username {
+    font-weight: 500;
+  }
+  // .publication-liked-user__last-login
+  &__last-login {
+    margin-top: 4px;
+  }
+  // .publication-liked-user__button
+  &__button {
+    width: 96px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: var(--blue);
+    color: var(--white);
+  }
+}

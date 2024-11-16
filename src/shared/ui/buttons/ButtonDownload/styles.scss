@@ -1,0 +1,13 @@
+.button-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  // .button-download__icon
+  &__icon {
+    color: var(--text-color);
+  }
+  // .button-download__text
+  &__text {
+  }
+}

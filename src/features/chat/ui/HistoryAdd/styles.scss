@@ -1,0 +1,30 @@
+.history-add {
+  position: relative;
+  width: fit-content;
+  cursor: pointer;
+  // .history-add__main
+  &__main {
+    position: relative;
+  }
+  // .history-add__avatar
+  &__avatar {
+    width: 64px;
+    height: 64px;
+  }
+  // .history-add__add-icon
+  &__add-icon {
+    position: absolute;
+    background-color: var(--dark);
+    border-radius: 50%;
+    right: 0;
+    bottom: 0;
+  }
+  // .history-add__title
+  &__title {
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--white);
+    text-align: center;
+  }
+}

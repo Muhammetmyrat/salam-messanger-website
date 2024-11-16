@@ -1,0 +1,80 @@
+.movie-element {
+  width: 168px;
+  cursor: pointer;
+  // .movie-element__main
+  &__main {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  // .movie-element__image
+  &__image {
+    padding-top: 133%;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  // .movie-element__season-info
+  &__season-info {
+    background: rgba(24, 28, 31, 0.8);
+    position: absolute;
+    width: 100%;
+    bottom: 16px;
+    color: var(--white);
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+  }
+  // .movie-element__watched
+  &__watched {
+    position: absolute;
+    z-index: 1;
+    background-color: #a0a0a0;
+    height: 8px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%;
+      background-color: #ff3b30;
+      width: var(--watched);
+    }
+  }
+  // .movie-element__types
+  &__types {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    display: flex;
+    gap: 8px;
+  }
+  // .movie-element__type
+  &__type {
+  }
+  // .movie-element__info
+  &__info {
+    margin-top: 8px;
+  }
+  // .movie-element__title
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  // .movie-element__author
+  &__author {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

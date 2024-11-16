@@ -1,0 +1,1 @@
+export const imagePath =  import.meta.env.BASE_URL

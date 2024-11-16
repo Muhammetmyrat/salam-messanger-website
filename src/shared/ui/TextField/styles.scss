@@ -1,0 +1,18 @@
+.text-field {
+  width: 100%;
+  // .text-field__body
+  &__body {
+    width: 100%;
+  }
+  // .text-field__input
+  &__input {
+    width: 100%;
+    background-color: var(--dark);
+    border-radius: 8px;
+    color: var(--text-color);
+    padding: 8px;
+    &::placeholder {
+      color: var(--system-gray);
+    }
+  }
+}

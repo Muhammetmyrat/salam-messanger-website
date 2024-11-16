@@ -1,0 +1,20 @@
+.book-preview-main {
+  // .book-preview-main__type-box
+  &__type-box {
+    width: 50%;
+  }
+  // .book-preview-main__type
+  &__type {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    // .book-preview-main__type_listen
+    &_listen {
+      margin-left: auto;
+      margin-right: 4px;
+      padding: 4px 8px 4px 4px;
+      background: linear-gradient(-90deg, #ffa800, #ff0000);
+      border-radius: 50px 8px 8px 50px;
+    }
+  }
+}

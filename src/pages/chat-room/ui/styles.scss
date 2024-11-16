@@ -1,0 +1,22 @@
+.chat-room {
+  height: 100%;
+  // .chat-room__header
+  &__header {
+    height: 96px;
+    border-bottom: 1px solid var(--dark);
+  }
+  // .chat-room__body
+  &__body {
+    height: calc(100% - 96px);
+    display: flex;
+    flex-direction: column;
+  }
+  // .chat-room__messages
+  &__messages {
+    flex: 1 1;
+    height: 0;
+  }
+  // .chat-room__send
+  &__send {
+  }
+}

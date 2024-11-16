@@ -1,0 +1,25 @@
+:root {
+  --dark: #F5F5F5;
+  --text-color: #1D2326;
+  --red: #FF6666;
+  --blue: #3F8AE0;
+  --gray:  #FFFFFF;
+  --system-gray: #7C7C7C;
+  --blue-light: #e5effd;
+  --Accept: #45BC51;
+  --SecondaryFFOrange: #FF9E00;
+  --transition: all 0.2s ease 0s;
+}
+
+html[prefers-color-scheme='dark'] {
+  --dark: #181C1F;
+  --text-color: #F5F5F5;
+  --red: #FF6666;
+  --blue: #3F8AE0;
+  --gray: #1D2326;
+  --system-gray: #7C7C7C;
+  --blue-light: #e5effd;
+  --Accept: #45BC51;
+  --SecondaryFFOrange: #FF9E00;
+  --transition: all 0.2s ease 0s;
+}

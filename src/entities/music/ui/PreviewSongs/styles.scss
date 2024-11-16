@@ -1,0 +1,14 @@
+.preview-songs {
+  // .preview-songs__header
+  &__header {
+    padding-left: 24px;
+  }
+  // .preview-songs__body
+  &__body {
+    margin-top: 24px;
+  }
+  // .preview-songs__list
+  &__list {
+    padding: 0 16px;
+  }
+}

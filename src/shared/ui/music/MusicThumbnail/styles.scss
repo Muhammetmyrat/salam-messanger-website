@@ -1,0 +1,35 @@
+.music-thumbnail {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  &::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+  // .music-thumbnail__circle
+  &__circle {
+    border-radius: 50%;
+  }
+  // .music-thumbnail__image
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  // .music-thumbnail__action
+  &__action {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,24 @@
+.text-field {
+  width: 100%;
+  position: relative;
+  // .text-field__icon
+  &__icon {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  // .text-field__input
+  &__input {
+    width: 100%;
+    padding: 12px 12px 12px 48px;
+    font-size: 16px;
+    line-height: 1;
+    background-color: var(--dark);
+    color: var(--text-color);
+    border-radius: 32px 8px 8px 32px;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+    &:placeholder {
+      color: var(--system-gray);
+    }
+  }
+}

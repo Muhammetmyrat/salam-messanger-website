@@ -1,0 +1,36 @@
+.preview-track {
+  display: grid;
+  grid-template-columns: 96px 1fr 56px;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  transition: 0.3s;
+  &:hover {
+    background-color: var(--gray);
+  }
+  // .preview-track__thumbnail
+  &__thumbnail {
+  }
+  // .preview-track__action
+  &__action {
+  }
+  // .preview-track__info
+  &__info {
+    padding: 0 16px;
+  }
+  // .preview-track__name
+  &__name {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  // .preview-track__artist
+  &__artist {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--system-gray);
+  }
+  // .preview-track__duration
+  &__duration {
+  }
+}

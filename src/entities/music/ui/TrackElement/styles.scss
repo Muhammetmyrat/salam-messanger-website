@@ -1,0 +1,25 @@
+.track-element {
+  // .track-element__thumbnail
+  &__thumbnail {
+  }
+  // .track-element__play-pause
+  &__play-pause {
+  }
+  // .track-element__info
+  &__info {
+    margin-top: 8px;
+  }
+  // .track-element__name
+  &__name {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 8px;
+    font-weight: 500;
+  }
+  // .track-element__artists
+  &__artists {
+    color: var(--system-gray);
+    line-height: 16px;
+    font-size: 14px;
+  }
+}

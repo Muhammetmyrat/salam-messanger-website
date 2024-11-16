@@ -1,0 +1,21 @@
+.book-preview-main {
+  // .book-preview-main__type-box
+  &__type-box {
+    width: 50%;
+  }
+  // .book-preview-main__type
+  &__type {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    // .book-preview-main__type_read
+    &_read {
+      padding-left: 4px;
+      margin-right: auto;
+      padding: 4px 4px 4px 8px;
+      flex-direction: row-reverse;
+      border-radius: 8px 50px 50px 8px;
+      background-color: #2d3134;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.authorization-registration-main {
+  // .authorization-registration-main__avatar
+  &__avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  // .authorization-registration-main__avatar-label
+  &__avatar-label {
+    color: var(--system-gray);
+    font-size: 12px;
+    margin-top: 8px;
+  }
+  // .authorization-registration-main__name
+  &__name {
+    margin-top: 32px;
+    &:deep() {
+      .text-field__input {
+        text-align: center;
+      }
+    }
+  }
+  // .authorization-registration-main__description
+  &__description {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 10px;
+    color: var(--system-gray);
+  }
+  // .authorization-registration-main__submit
+  &__submit {
+    margin-top: 32px;
+  }
+}
+
+.avatar-loader {
+  width: 96px;
+  height: 96px;
+  position: relative;
+  cursor: pointer;
+
+  input {
+    display: none;
+  }
+
+  // .avatar-loader__image
+  &__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  // .avatar-loader__prev-icon
+  &__prev-icon {
+  }
+  // .avatar-loader__icon
+  &__icon {
+    color: var(--text-color);
+    padding: 4px;
+    display: flex;
+    border-radius: 50%;
+    background-color: var(--system-gray);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

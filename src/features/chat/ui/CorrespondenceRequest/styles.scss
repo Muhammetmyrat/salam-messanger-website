@@ -1,0 +1,41 @@
+.correspondence-request {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 16px 0 12px;
+  // .correspondence-request__avatar
+  &__avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  // .correspondence-request__info
+  &__info {
+    flex: 1 1;
+    width: 0;
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  // .correspondence-request__title
+  &__title {
+    font-weight: 500;
+  }
+  // .correspondence-request__counts
+  &__counts {
+    display: flex;
+    align-items: center;
+    p {
+      padding-right: 7px;
+      font-size: 12px;
+    }
+    display: flex;
+  }
+}

@@ -1,0 +1,27 @@
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  // .avatar_active
+  &_active {
+    background: linear-gradient(#ff9900, #dc143b);
+  }
+  // .avatar__border
+  &__border {
+    padding: 2px;
+  }
+  // .avatar__image
+  &__image {
+    padding: 2px;
+    background-color: var(--gray);
+    border-radius: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

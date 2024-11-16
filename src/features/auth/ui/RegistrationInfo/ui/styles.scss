@@ -1,0 +1,25 @@
+.authorization-info {
+  // .authorization-info__name
+  &__name {
+  }
+  // .authorization-info__description
+  &__description {
+    margin-top: 8px;
+  }
+  // .authorization-info__gender
+  &__gender {
+    margin-top: 8px;
+  }
+  // .authorization-info__skip
+  &__skip {
+    margin-top: 16px;
+    color: var(--blue);
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+  // .authorization-info__submit
+  &__submit {
+    margin-top: 32px;
+  }
+}

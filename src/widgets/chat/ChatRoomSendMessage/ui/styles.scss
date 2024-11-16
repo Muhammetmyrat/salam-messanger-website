@@ -1,0 +1,61 @@
+.send-message {
+  width: 100%;
+  height: 100%;
+  background-color: var(--gray);
+  // .send-message__wrapper
+  &__wrapper {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    gap: 16px;
+  }
+  // .send-message__select-file
+  &__select-file {
+    display: block;
+    background-color: var(--dark);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      display: none;
+    }
+  }
+  // .send-message__text-area
+  &__text-area {
+    flex: 1 1;
+    width: 0;
+    display: flex;
+    textarea {
+      height: 40px;
+      width: 100%;
+      background-color: var(--dark);
+      border-radius: 8px;
+      padding: 12px 8px;
+      font-size: 16px;
+      line-height: 1;
+      color: var(--white);
+      resize: none;
+      &::placeholder {
+        color: var(--system-gray);
+      }
+    }
+  }
+  // .send-message__voice
+  &__voice {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    color: var(--white);
+  }
+}

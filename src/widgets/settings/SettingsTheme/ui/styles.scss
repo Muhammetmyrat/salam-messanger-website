@@ -1,0 +1,23 @@
+.settings-theme {
+  width: 100%;
+  // .settings-theme__header
+  &__header {
+    background-color: var(--gray);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  // .settings-theme__title
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+  }
+  // .settings-theme__body
+  &__body {
+    margin-top: 1px;
+    background-color: var(--gray);
+    padding: 24px;
+  }
+}

@@ -1,0 +1,44 @@
+.message {
+  // .message_inside
+  &_inside {
+    .message__wrapper {
+      background-color: var(--blue);
+    }
+  }
+  // .message__wrapper
+  &__wrapper {
+    background-color: #2d3134;
+    border-radius: 8px;
+  }
+  // .message__text
+  &__text {
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  // .message__time-status
+  &__time-status {
+    position: relative;
+    float: right;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    height: 16px;
+    background-color: #2d3134;
+    margin-top: 4px;
+    border-radius: 4px;
+    padding: 0 4px;
+    p {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  // .message__status
+  &__status {
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blue);
+  }
+}

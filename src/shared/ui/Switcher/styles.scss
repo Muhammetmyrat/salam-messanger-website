@@ -1,0 +1,59 @@
+.switcher {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  input[type="checkbox"] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    left: 45px;
+    width: 130px;
+    height: 60px;
+    background: var(--dark);
+    display: block;
+    border-radius: 90px;
+    position: relative;
+    transform: scale(0.3);
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.3s ease;
+  }
+  
+  label:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    background: var(--text-color);
+    border-radius: 90px;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+  
+  input:checked + label {
+    background: var(--blue);
+    transition: all 0.6s ease;
+  }
+  
+  input:checked + label:after {
+    left: calc(100%);
+    transition: all 0.3s ease;
+    transform: translateX(-100%);
+  }
+}

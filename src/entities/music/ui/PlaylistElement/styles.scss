@@ -1,0 +1,16 @@
+.playlist-element {
+  // .playlist-element__thumbnail
+  &__thumbnail {
+  }
+  // .playlist-element__info
+  &__info {
+    margin-top: 8px;
+  }
+  // .playlist-element__name
+  &__name {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 8px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,22 @@
+.chat-area {
+  background-color: var(--dark);
+  width: 100%;
+  height: 100%;
+  border-left: 2px solid var(--dark);
+  // .chat-area__body
+  &__body {
+    display: flex;
+    height: 100%;
+  }
+  // .chat-area__chat-list
+  &__chat-list {
+    width: 432px;
+    background-color: var(--gray);
+  }
+  // .chat-area__char-room
+  &__char-room {
+    padding-left: 2px;
+    flex: 1 1;
+    width: 0;
+  }
+}

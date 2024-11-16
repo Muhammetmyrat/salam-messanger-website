@@ -1,0 +1,19 @@
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 32px;
+  // .block-header__title
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  // .block-header__link
+  &__link {
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}

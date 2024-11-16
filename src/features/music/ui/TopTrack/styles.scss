@@ -1,0 +1,43 @@
+.top-track {
+  display: grid;
+  grid-template-columns: 32px 64px 1fr 56px;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  transition: 0.3s;
+  &:hover {
+    background-color: var(--gray);
+  }
+  // .top-track__number
+  &__number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+  }
+  // .top-track__thumbnail
+  &__thumbnail {
+  }
+  // .top-track__action
+  &__action {
+  }
+  // .top-track__info
+  &__info {
+    padding: 0 16px;
+  }
+  // .top-track__name
+  &__name {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  // .top-track__artist
+  &__artist {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--system-gray);
+  }
+  // .top-track__duration
+  &__duration {
+  }
+}

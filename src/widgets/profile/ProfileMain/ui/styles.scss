@@ -1,0 +1,141 @@
+.profile-main {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 80px 312px calc(100% - 80px - 312px - 2px);
+  grid-gap: 1px;
+  // .profile-main__header
+  &__header {
+    background-color: var(--gray);
+  }
+  // .profile-main__info
+  &__info {
+    background-color: var(--gray);
+  }
+  // .profile-main__publications
+  &__publications {
+    background-color: var(--gray);
+  }
+}
+.profile-main-header {
+  width: 100%;
+  height: 100%;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // .profile-main-header__username
+  &__username {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  // .profile-main-header__actions
+  &__actions {
+    display: flex;
+    gap: 8px;
+  }
+  // .profile-main-header__action
+  &__action {
+  }
+}
+.profile-main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 28px 8px 16px 8px;
+  // .profile-main-info__user
+  &__user {
+  }
+  // .profile-main-info__counts
+  &__counts {
+    display: flex;
+    gap: 16px;
+  }
+  // .profile-main-info__count
+  &__count {
+    flex: 1 1;
+    width: 0;
+    text-align: center;
+    line-height: 24px;
+    span {
+      display: block;
+      font-weight: 500;
+    }
+    p {
+    }
+  }
+}
+
+.profile-main-user {
+  width: 100%;
+  // .profile-main-user__image
+  &__image {
+    margin: 0 auto;
+    width: fit-content;
+    position: relative;
+  }
+  // .profile-main-user__avatar
+  &__avatar {
+    width: 160px;
+    height: 160px;
+  }
+  // .profile-main-user__edit
+  &__edit {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+    bottom: 4px;
+    right: 4px;
+    z-index: 1;
+  }
+  // .profile-main-user__username
+  &__username {
+    text-align: center;
+    margin-top: 12px;
+    line-height: 24px;
+  }
+}
+
+.profile-main-publications {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  // .profile-main-publications__wrapper
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+  }
+  // .profile-main-publications__item
+  &__item {
+    cursor: pointer;
+    width: 100%;
+  }
+  // .profile-main-publications__image
+  &__image {
+    width: 100%;
+    position: relative;
+    &::before {
+      content: '';
+      padding-top: 100%;
+      display: block;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

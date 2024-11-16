@@ -1,0 +1,112 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body,
+#app {
+  min-width: rem($minWidth);
+  height: 100%;
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+body {
+  line-height: 1;
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  scroll-snap-type: y mandatory;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+  &._lock {
+    overflow: hidden;
+    -ms-touch-action: none;
+    touch-action: none;
+    top: 0px;
+  }
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--gray);
+    border-radius: 5px;
+    padding: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--system-gray);
+    border-radius: 5px;
+    border: 2px solid var(--gray);
+  }
+}
+input,
+button,
+textarea {
+  font-family: $fontFamily;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a {
+  color: inherit;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a,
+button {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}

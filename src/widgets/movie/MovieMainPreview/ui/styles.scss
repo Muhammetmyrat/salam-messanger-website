@@ -1,0 +1,152 @@
+.movie-main-preview {
+  height: 501px;
+  border-radius: 16px;
+  background-color: var(--gray);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  // .movie-main-preview__trailer
+  &__trailer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  // .movie-main-preview__volume
+  &__volume {
+    position: absolute;
+    z-index: 1;
+    top: 24px;
+    right: 24px;
+    padding: 4px;
+    background-color: rgba(24, 28, 31, 0.8);
+    color: var(--white);
+    border-radius: 50%;
+  }
+  // .movie-main-preview__video
+  &__video {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+      opacity: 0.7;
+    }
+  }
+
+  // .movie-main-preview__info
+  &__info {
+    position: absolute;
+    max-width: 491px;
+    width: calc(100% - 800px);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 16px;
+    z-index: 1;
+  }
+
+  // .movie-main-preview__actions
+  &__actions {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    z-index: 1;
+  }
+}
+
+.movie-main-preview-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // .movie-main-preview-info__play
+  &__play {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(-90deg, #ffa800, #ff0000);
+    width: fit-content;
+    padding: 4px 19px 4px 4px;
+    border-radius: 40px;
+    p {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+  // .movie-main-preview-info__play-icon
+  &__play-icon {
+    padding: 12px;
+    background-color: #181c1f;
+    border-radius: 50%;
+  }
+  // .movie-main-preview-info__name
+  &__name {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 56px;
+  }
+  // .movie-main-preview-info__description
+  &__description {
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.2;
+  }
+}
+
+.movie-main-preview-actions {
+  display: flex;
+  background-color: rgba(24, 28, 31, 0.9);
+  border-radius: 8px;
+  padding: 8px 24px;
+  gap: 24px;
+  // .movie-main-preview-actions__action
+  &__action {
+    background-color: transparent;
+    // .movie-main-preview-actions__action_no-action
+    &_no-action {
+      .movie-main-preview-actions__icon {
+        color: var(--system-gray);
+      }
+    }
+    // .movie-main-preview-actions__action_favorite
+    &_favorite {
+      &._active {
+        color: var(--red);
+      }
+    }
+    // .movie-main-preview-actions__action_share
+    &_share {
+    }
+    // .movie-main-preview-actions__action_download
+    &_download {
+    }
+  }
+  // .movie-main-preview-actions__icon
+  &__icon {
+    color: var(--text-color);
+    display: flex;
+  }
+  // .movie-main-preview-actions__count
+  &__count {
+    margin-top: 8px;
+    color: var(--system-gray);
+  }
+}

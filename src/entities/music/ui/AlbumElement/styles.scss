@@ -1,0 +1,15 @@
+.album-element {
+  // .album-element__thumbnail
+  &__thumbnail {
+  }
+  // .album-element__info
+  &__info {
+    margin-top: 8px;
+  }
+  // .album-element__name
+  &__name {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+  }
+}

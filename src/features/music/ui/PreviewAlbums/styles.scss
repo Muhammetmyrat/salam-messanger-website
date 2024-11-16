@@ -1,0 +1,14 @@
+.preview-albums {
+  padding-left: 24px;
+  // .preview-albums__header
+  &__header {
+  }
+  // .preview-albums__slider
+  &__slider {
+    margin-top: 24px;
+  }
+  // .preview-albums__slide
+  &__slide {
+    width: 128px;
+  }
+}

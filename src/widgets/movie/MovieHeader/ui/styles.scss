@@ -1,0 +1,19 @@
+.movie-header {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 32px 0 24px;
+  gap: 16px;
+  // .movie-header__search
+  &__search {
+    flex: 1 1;
+  }
+  // .movie-header__filter
+  &__filter {
+    width: 192px;
+  }
+  // .movie-header__download
+  &__download {
+    width: 192px;
+  }
+}

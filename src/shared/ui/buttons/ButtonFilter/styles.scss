@@ -1,0 +1,13 @@
+.button-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  // .button-filter__icon
+  &__icon {
+    color: var(--text-color);
+  }
+  // .button-filter__text
+  &__text {
+  }
+}

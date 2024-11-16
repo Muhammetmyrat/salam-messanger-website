@@ -1,0 +1,26 @@
+.preview-artist {
+  display: flex;
+  align-items: center;
+  // .preview-artist__avatar
+  &__avatar {
+    width: 168px;
+    height: 168px;
+  }
+  // .preview-artist__info
+  &__info {
+    flex: 1 1;
+    width: 0;
+    padding-left: 24px;
+  }
+  // .preview-artist__artist-name
+  &__artist-name {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  // .preview-artist__songs-count
+  &__songs-count {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--system-gray);
+  }
+}

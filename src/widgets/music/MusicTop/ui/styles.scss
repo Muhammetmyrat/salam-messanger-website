@@ -1,0 +1,13 @@
+.music-top {
+  padding-right: 24px;
+  padding-bottom: 24px;
+  // .music-top__row
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px;
+  }
+  // .music-top__col
+  &__col {
+  }
+}

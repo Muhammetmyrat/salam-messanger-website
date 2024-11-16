@@ -1,0 +1,50 @@
+.authorization-phone {
+  // .authorization-phone__location
+  &__location {
+  }
+  // .authorization-phone__number
+  &__number {
+    margin-top: 8px;
+    display: flex;
+    gap: 8px;
+  }
+  // .authorization-phone__country-code
+  &__country-code {
+    position: relative;
+    width: 56px;
+    span {
+      position: absolute;
+      left: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    :deep() {
+      .text-field__input {
+        padding-left: 17px;
+      }
+    }
+  }
+  // .authorization-phone__phone-number
+  &__phone-number {
+    flex: 1 1;
+    width: 0;
+  }
+  // .authorization-phone__privacy-description
+  &__privacy-description {
+    margin-top: 8px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 1.2;
+    padding: 0 4px;
+    a {
+      color: var(--blue);
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  // .authorization-phone__send
+  &__send {
+    margin-top: 8px;
+  }
+}

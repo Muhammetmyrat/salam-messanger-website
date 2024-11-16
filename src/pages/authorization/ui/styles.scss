@@ -1,0 +1,13 @@
+.authorization {
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark);
+
+  // .authorization__wrapper
+  &__wrapper {
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 189px;
+    width: fit-content;
+  }
+}

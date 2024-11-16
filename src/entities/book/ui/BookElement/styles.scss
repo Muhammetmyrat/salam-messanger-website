@@ -1,0 +1,50 @@
+.book-element {
+  width: 168px;
+  // .book-element__main
+  &__main {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  // .book-element__image
+  &__image {
+    padding-top: 133%;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  // .book-element__types
+  &__types {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    display: flex;
+    gap: 8px;
+  }
+  // .book-element__type
+  &__type {
+  }
+  // .book-element__info
+  &__info {
+    margin-top: 8px;
+  }
+  // .book-element__title
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  // .book-element__author
+  &__author {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

@@ -1,0 +1,6 @@
+export { default as IconChats } from './IconChats.vue'
+export { default as IconGlance } from './IconGlance.vue'
+export { default as IconAdd } from './IconAdd.vue'
+export { default as IconMusic } from './IconMusic.vue'
+export { default as IconVideo } from './IconVideo.vue'
+export { default as IconBook } from './IconBook.vue'

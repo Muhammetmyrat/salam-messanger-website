@@ -1,0 +1,39 @@
+.security-pass {
+  width: 100%;
+  height: max-content;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--gray);
+  border-radius: 10px;
+
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--text-color)
+  }
+
+  &__body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__fields {
+    display: flex;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    p {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 24px;
+      color: var(--system-gray)
+    }
+  }
+}

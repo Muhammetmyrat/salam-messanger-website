@@ -4,6 +4,7 @@
   }
   // .track-element__play-pause
   &__play-pause {
+    cursor: pointer;
   }
   // .track-element__info
   &__info {
@@ -15,11 +16,23 @@
     line-height: 24px;
     margin-top: 8px;
     font-weight: 500;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    word-break: break-all;
   }
   // .track-element__artists
   &__artists {
     color: var(--system-gray);
     line-height: 16px;
     font-size: 14px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    word-break: break-all;
   }
 }

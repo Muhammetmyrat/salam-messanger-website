@@ -1,10 +1,14 @@
 <template>
   <div class="artist-element">
     <div class="artist-element__thumbnail">
-      <MusicThumbnail circle />
+      <MusicThumbnail
+        :img-path="artist?.image_path"
+        :title="artist?.title"
+        circle
+      />
     </div>
     <div class="artist-element__info">
-      <div class="artist-element__name">{{ artist?.name }}</div> 
+      <div class="artist-element__name">{{ artist?.name }}</div>
     </div>
   </div>
 </template>

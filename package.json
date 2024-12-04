@@ -12,6 +12,7 @@
     "@types/pdfjs-dist": "^2.10.378",
     "@vueuse/head": "^2.0.0",
     "axios": "^1.6.8",
+    "hls.js": "^1.5.17",
     "json-bigint": "^1.0.0",
     "pdfjs-dist": "^2.9.359",
     "pinia": "^2.1.7",

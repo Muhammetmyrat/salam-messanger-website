@@ -17,7 +17,7 @@
           <template v-slot:header>
             <BlockHeader title="Songs" />
           </template>
-          <PreviewTrack v-for="index in 20" :key="index" />
+          <!-- <PreviewTrack v-for="index in 20" :key="index" /> -->
         </PreviewSongs>
       </div>
     </div>

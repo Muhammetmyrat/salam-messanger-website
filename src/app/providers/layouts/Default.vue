@@ -2,6 +2,9 @@
   import { MainLayout } from '@/shared/ui/layouts'
   import { TheSidebar } from '@/widgets/TheSidebar'
   import { MusicPlayer } from '@/widgets/player/MusicPlayer'
+  import { MusicStore } from '@/features/music'
+
+  const { isShowPlayer } = MusicStore
 </script>
 
 <template>
@@ -10,5 +13,5 @@
       <TheSidebar />
     </template>
   </MainLayout>
-  <MusicPlayer v-if="true" />
+  <MusicPlayer v-if="isShowPlayer" />
 </template>

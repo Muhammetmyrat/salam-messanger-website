@@ -1,7 +1,10 @@
 <template>
   <div class="playlist-element">
     <div class="playlist-element__thumbnail">
-      <MusicThumbnail> </MusicThumbnail>
+      <MusicThumbnail
+        :img-path="playlist?.image_path"
+        :title="playlist?.title"
+      />
     </div>
     <div class="playlist-element__info">
       <div class="playlist-element__name">{{ playlist?.name }}</div>

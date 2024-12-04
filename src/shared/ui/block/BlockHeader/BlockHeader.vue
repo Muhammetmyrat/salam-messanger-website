@@ -13,7 +13,7 @@
 
   defineProps({
     title: { String, default: '' },
-    link: { String, default: '' }
+    link: { String, default: '' },
   })
 </script>
 

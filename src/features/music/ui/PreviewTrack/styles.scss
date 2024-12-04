@@ -23,12 +23,24 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
   }
   // .preview-track__artist
   &__artist {
     font-size: 14px;
     line-height: 16px;
     color: var(--system-gray);
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
   }
   // .preview-track__duration
   &__duration {

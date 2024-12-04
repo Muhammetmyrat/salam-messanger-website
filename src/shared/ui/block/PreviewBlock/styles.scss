@@ -1,8 +1,8 @@
 .preview-block {
   position: fixed;
   width: 432px;
-  height: calc(100% - 104px);
-  top: 104px;
+  bottom: 96px;
+  top: 0;
   background-color: rgba(24, 28, 31, 0.9);
   right: -432px;
   border-top-left-radius: 16px;
@@ -37,6 +37,12 @@
     text-align: center;
     font-size: 24px;
     font-weight: 500;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    word-break: break-all;
   }
   // .preview-block__close
   &__close {
@@ -53,13 +59,13 @@
       width: 10px;
       height: 10px;
     }
-  
+
     &::-webkit-scrollbar-track {
       background: var(--gray);
       border-radius: 5px;
       padding: 2px;
     }
-  
+
     &::-webkit-scrollbar-thumb {
       background: var(--system-gray);
       border-radius: 5px;

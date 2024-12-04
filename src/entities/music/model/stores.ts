@@ -9,53 +9,55 @@ interface Music {
 }
 
 interface IMusicStore {
+  isPlayTrack: Ref<boolean>
   isShowArtistPreview: Ref<boolean>
   isShowPlayerPreview: Ref<boolean>
+  selectTrackId: Ref<null | number>
   musicsMain: Ref<Music[]>
-  musicsMainTop: ComputedRef<Music | {}>
+  musicsMainTop: ComputedRef<any>
+  playTrack: (id: number) => void
+  pauseTrack: () => void
   closeArtistPreview: () => void
   openArtistPreview: () => void
-  closePlayerPreview: () => void
-  openPlayerPreview: () => void
+  togglePlayerPreview: () => void
   fetchMusicMain: () => Promise<boolean>
+  trackListening: (payload: {
+    duration: number
+    musicId: number
+  }) => Promise<boolean>
 }
 
 const NAMESPACE = 'music'
 
 export const useMusicStore = defineStore(NAMESPACE, (): IMusicStore => {
   // State
+  const isPlayTrack = ref(false)
   const isShowArtistPreview = ref(false)
   const isShowPlayerPreview = ref(false)
   const musicsMain = ref<Music[]>([])
+  const selectTrackId = ref<null | number>(null)
 
   // Getters
   const musicsMainTop = computed(() =>
-    musicsMain.value.find((music) => music.type === 'top') || {}
+    musicsMain.value.find((music) => music.type === 'top')
   )
 
   // Actions
   const closeArtistPreview = () => (isShowArtistPreview.value = false)
   const openArtistPreview = () => (isShowArtistPreview.value = true)
-  const closePlayerPreview = () => (isShowPlayerPreview.value = false)
-  const openPlayerPreview = () => (isShowPlayerPreview.value = true)
-
-  const chunkArray = <T>(arr: T[], chunkSize: number): T[][] => {
-    const chunks = []
-    for (let i = 0; i < arr.length; i += chunkSize) {
-      chunks.push(arr.slice(i, i + chunkSize))
-    }
-    return chunks
+  const togglePlayerPreview = () =>
+    (isShowPlayerPreview.value = !isShowPlayerPreview.value)
+  const playTrack = (id: number) => {
+    selectTrackId.value = id
+    isPlayTrack.value = true
+  }
+  const pauseTrack = () => {
+    isPlayTrack.value = false
+    selectTrackId.value = null
   }
 
   const updateMusicMain = (musicData: Music[]) => {
-    musicsMain.value = musicData.map((music) => {
-      if (music.type === 'top') {
-        const chunkedData = chunkArray(music.data, 5)
-
-        return { ...music, data: chunkedData.slice(0, 2) }  
-      }
-      return music
-    })
+    musicsMain.value = musicData
   }
 
   const fetchMusicMain = async (): Promise<boolean> => {
@@ -70,7 +72,7 @@ export const useMusicStore = defineStore(NAMESPACE, (): IMusicStore => {
     }
   }
 
-  const fetchMusicBlock = async (id): Promise<boolean> => {
+  const fetchMusicBlock = async (id: number): Promise<boolean> => {
     try {
       const { data } = await api.getMusicBlock(id)
       if (data.error) return false
@@ -82,16 +84,34 @@ export const useMusicStore = defineStore(NAMESPACE, (): IMusicStore => {
     }
   }
 
+  const trackListening = async (payload: {
+    duration: number
+    musicId: number
+  }): Promise<boolean> => {
+    try {
+      const { data } = await api.trackListeningCount(payload)
+      if (data.error) return false
+      return true
+    } catch (error) {
+      console.error('Failed:', error)
+      return false
+    }
+  }
+
   // Public API
   return {
+    isPlayTrack,
     isShowArtistPreview,
     isShowPlayerPreview,
     musicsMain,
     musicsMainTop,
+    playTrack,
+    selectTrackId,
+    pauseTrack,
     closeArtistPreview,
     openArtistPreview,
-    closePlayerPreview,
-    openPlayerPreview,
+    togglePlayerPreview,
     fetchMusicMain,
+    trackListening,
   }
 })

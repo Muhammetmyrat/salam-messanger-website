@@ -1,10 +1,14 @@
 <template>
   <div class="web-player">
     <div class="web-player__player">
-      <DesktopPlayer />
+      <Teleport to="#pop-up">
+        <DesktopPlayer />
+      </Teleport>
     </div>
     <div class="web-player__playlist">
-      <MusicSequence />
+      <Teleport to="#pop-up">
+        <MusicSequence />
+      </Teleport>
     </div>
   </div>
 </template>

@@ -24,7 +24,7 @@
   const emit = defineEmits(['close', 'back'])
   const props = defineProps({
     title: { type: String, default: '' },
-    isShow: { type: Boolean, default: false }
+    isShow: { type: Boolean, default: false },
   })
 
   function back() {
@@ -37,8 +37,8 @@
   const classes = computed(() => [
     'preview-block',
     {
-      'preview-block__show': props.isShow
-    }
+      'preview-block__show': props.isShow,
+    },
   ])
 </script>
 

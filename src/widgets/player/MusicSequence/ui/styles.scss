@@ -1,0 +1,11 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  right: 432px;
+  top: 0;
+  bottom: 96px;
+  z-index: 100;
+  background: transparent;
+  touch-action: none;
+  cursor: default;
+}
